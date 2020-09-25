@@ -1,0 +1,23 @@
+public class ascendingorder {
+    public static void main(String[] args) {
+        int[] array = new int[]{5, 4, 3, 2, 1};
+        int tem;
+
+        for (int n = 0; n < array.length; n++) {
+            for (int m = n + 1; m < array.length; m++) {
+                if (array[n] > array[m]) {
+                    tem = array[n];
+                    array[n] = array[m];
+                    array[m] = tem;
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Elements of array sorted in ascending order: ");
+        for (int i : array) {
+            System.out.print(i + " ");
+
+        }
+
+    }
+}
